@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="jakarta.servlet.http.HttpServlet" %>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +26,7 @@
     <section id="home" class="hero">
     <div class="banner-container">
         <div class="banner-text">
-            <h1>Welcome to ASHISH COMPUTER INSTITUTE</h1>
+            <h1>Welcome to ASHISH COMPUTER INSTITUTE & LIBRARY</h1>
             <p>MY INSTITUTE PROVIDE BEST EDUCATION IN INFORMATION TECHONOLOGY</p>
         </div>
         <div class="banner">

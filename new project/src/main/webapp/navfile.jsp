@@ -105,7 +105,9 @@ nav a:hover {
     <div class="dropdown">
         <button class="dropbtn">Franchiees</button>
         <div class="dropdown-content">
-            <a href="#center_rejistration">CENTER REGISTRATION</a>
+		 <a href="<%=request.getContextPath()%>/reg_1">CENTER REGISTRATION</a>
+
+
             <a href="#center_process">CENTER PROCESS</a>
         </div>
     </div>
@@ -113,7 +115,7 @@ nav a:hover {
     <div class="dropdown">
         <button class="dropbtn">Library</button>
         <div class="dropdown-content">
-            <a href="#center_rejistration">SEAT ALLOTMENT</a>
+        <a href="<%=request.getContextPath()%>/setAppoint">SEAT ALLOTMENT</a>
             <a href="#center_process">LIBRARY IMAGE</a>
         </div>
     </div>
