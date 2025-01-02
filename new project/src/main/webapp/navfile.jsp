@@ -132,13 +132,13 @@ nav a:hover {
     <div class="dropdown">
         <button class="dropbtn">Student</button>
         <div class="dropdown-content">
-            <a href="#student_registration">STUDENT REGISTRATION</a>
-            <a href="#student_verification">STUDENT VERIFICATION</a>
-            <a href="#student_login">STUDENT LOGIN</a>
-            <a href="#marksheet_verification">MARKSHEET VERIFICATION</a>
-            <a href="#certificate_verification">CERTIFICATE VERIFICATION</a>
-            <a href="#old_certificate_verification">OLD CERTIFICATE VERIFICATION</a>
-            <a href="#admit">ADMIT DOWNLOAD</a>
+           <a href="<%=request.getContextPath()%>/student"> STUDENT REGISTRATION</a>
+           <a href="<%=request.getContextPath()%>/verify"> STUDENT VERIFICATION</a>
+            <a href="<%=request.getContextPath()%>/logi"> STUDENT LOGIN</a>
+            <a href="<%=request.getContextPath()%>/marksheet_ver"> MARKSHEET VERIFICATION</a>
+            <a href="<%=request.getContextPath()%>/certificate_ver">CERTIFICATE VERIFICATION</a>
+            <a href="<%=request.getContextPath()%>/old_certi"> OLD CERTIFICATE VERIFICATION</a>
+            <a href="<%=request.getContextPath()%>/admit_car">ADMIT CARD</a>
         </div>
     </div>
     <div class="dropdown">

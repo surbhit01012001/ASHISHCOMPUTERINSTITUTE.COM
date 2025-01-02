@@ -12,10 +12,87 @@
 	
 
 </head>
+<style>
 
-      <style>
-      
-      </style>
+      /* Banner Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove padding to allow image to take full width */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure the section takes up full width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Banner Container */
+.banner-container {
+    text-align: center;
+    position: relative;
+    width: 100%; /* Full width of container */
+    height: 100%; /* Full height of container */
+}
+
+/* Banner Image Styling */
+.banner-image {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide 15s infinite; /* Animates images */
+    opacity: 0; /* Hide images initially */
+    transition: opacity 1s ease-in-out;
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    33% { opacity: 1; }
+    43% { opacity: 0; }
+}
+
+/* Banner Text Styling */
+.banner-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect center */
+    color: #333; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+    z-index: 2; /* Ensure the text is above the images */
+}
+
+.banner-text h1 {
+    font-size: 45px;
+    margin: 0 20px;
+}
+
+.banner-text p {
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-image {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .banner-text h1 {
+        font-size: 24px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+}
+</style>
 
 <body>
     <header>
@@ -24,17 +101,18 @@
     <jsp:include page="navfile.jsp" />
    
     <section id="home" class="hero">
-    <div class="banner-container">
-        <div class="banner-text">
-            <h1>Welcome to ASHISH COMPUTER INSTITUTE & LIBRARY</h1>
-            <p>MY INSTITUTE PROVIDE BEST EDUCATION IN INFORMATION TECHONOLOGY</p>
+        <div class="banner-container">
+            <img src="<%= request.getContextPath() %>/image/class_iage_1.jpg" alt="Banner" class="banner-image">
+            <img src="<%= request.getContextPath() %>/image/class_image_2.jpg.jpg" alt="Banner" class="banner-image">
+            <img src="<%= request.getContextPath() %>/image/background banner (2).jpg" alt="Banner" class="banner-image">
+            <div class="banner-text">
+                <h1>Welcome to ASHISH COMPUTER INSTITUTE & LIBRARY</h1>
+                <p>MY INSTITUTE PROVIDES THE BEST EDUCATION IN INFORMATION TECHNOLOGY</p>
+            </div>
         </div>
-        <div class="banner">
-        
-            <!-- The banner is styled using the CSS below -->
-        </div>
-    </div>
-</section>
+    </section>
+
+
     
     
     	<div class="carousel-container">

@@ -35,54 +35,6 @@ header h1 {
 
 
 
-/* Banner styling */
-
-	    body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Banner Container */
-.banner-container {
-    position: relative;
-    text-align: center;
-    color: #ff0000;
-}
-
-/* Text Above Banner */
-.banner-text {
-    position: absolute;
-    top: 20px; /* Adjust this value to move the text */
-    width: 100%;
-    text-align: left;
-    z-index: 2;
-}
-
-.banner-text h1 {
-    font-size: 36px;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.banner-text p {
-    font-size: 18px;
-    margin: 5px 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-/* Banner Styling */
-.banner {
-   background-image: url("image/background banner (2).jpg");
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the background image */
-    height: 400px; /* Height of the banner */
-   
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    position: relative;
-    z-index: 1;
-}  
 
 
 /* Enquiry Form Styling */
